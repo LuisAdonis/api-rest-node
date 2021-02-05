@@ -16,3 +16,6 @@ app.get("/", (req, res) => {
 require("./app/routes/localesroutes.js")(app);
 
 // set port, listen for requests
+app.listen(() => {
+  console.log("Server is running on port 3000.");
+});
